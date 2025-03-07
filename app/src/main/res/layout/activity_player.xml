@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/video_player"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/background"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/video_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This video is sponsored by Me"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_marginVertical="12dp"
+        android:layout_marginHorizontal="8dp"
+        android:layout_below="@+id/video_player"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/video_short_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/video_title"
+        android:layout_marginHorizontal="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.3M views"
+            android:layout_marginRight="8dp"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1y ago"
+            android:layout_marginRight="8dp"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="...more"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="13sp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/channel_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/video_short_description"
+        android:layout_marginVertical="16dp"
+        android:layout_marginHorizontal="8dp">
+
+        <com.example.ismai.youtube.RoundedImageView
+            android:id="@+id/channel_pic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/background"
+            app:cornerRadius="50dp"
+            android:layout_marginRight="16dp"/>
+
+        <TextView
+            android:id="@+id/channel_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Colorful Emedia"
+            android:textSize="16sp"
+            android:textColor="#033"
+            android:textStyle="bold"
+            android:layout_marginRight="16dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/channel_pic"/>
+
+        <TextView
+            android:id="@+id/channel_sub_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="21K"
+            android:textSize="13sp"
+            android:textColor="#AAA"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/channel_name"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:text="Subscribe"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:textColor="#000"
+            android:background="@drawable/subscribe_btn"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

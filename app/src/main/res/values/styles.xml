@@ -1,0 +1,9 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#FF0000</item>  <!-- YouTube Red -->
+        <item name="colorPrimaryDark">#D00000</item>
+        <item name="colorAccent">#FFFFFF</item>
+    </style>
+
+</resources>

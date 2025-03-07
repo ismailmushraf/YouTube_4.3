@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">YouTube</string>
+    <string-array name="actions">
+        <item>Do nothing</item>
+        <item>Visit breakdiving.io</item>
+        <item>Call someone</item>
+        <item>Map of YETspaceATX</item>
+        <item>Take Picture</item>
+        <item>Edit First contact</item>
+    </string-array>
+</resources>

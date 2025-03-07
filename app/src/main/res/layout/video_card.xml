@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp">
+
+    <com.example.ismai.youtube.RoundedImageView
+        android:id="@+id/thumbnail_pic"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:scaleType="fitXY"
+        android:layout_marginEnd="8dp"
+        />
+
+    <TextView
+        android:id="@+id/video_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_toEndOf="@+id/thumbnail_pic"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:fontFamily="cursive"
+        android:layout_marginBottom="8dp"/>
+
+    <LinearLayout
+        android:id="@+id/video_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_toEndOf="@id/thumbnail_pic"
+        android:layout_below="@id/video_title"
+        android:layout_marginBottom="8dp">
+        <TextView
+            android:id="@+id/view_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#AAA"
+            android:textSize="12sp"
+            android:fontFamily="serif-monospace"
+            android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#AAA"
+            android:textSize="12sp"
+            android:text="·"
+            android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:id="@+id/created_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#AAA"
+            android:textSize="12sp"
+            android:fontFamily="serif-monospace" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/channel_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@id/video_data"
+        android:layout_toEndOf="@id/thumbnail_pic"
+        android:textSize="14sp"
+        android:fontFamily="serif-monospace"
+        android:textColor="#424242"/>
+
+</RelativeLayout>
